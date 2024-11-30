@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-  flex: 1; /* Keeps logo on the left */
+  flex: 0.5; /* Keeps logo on the left */
 }
 
 .logo h1 {
@@ -59,7 +59,7 @@ nav ul li a:hover {
 
 /* Auth Buttons */
 .auth-buttons {
-  flex: 1;
+  flex: 0.5;
   display: flex;
   justify-content: flex-end; /* Pushes buttons to the right */
   gap: 10px;
@@ -83,6 +83,69 @@ nav ul li a:hover {
 .login-btn:hover {
   background-color: #2c3e50;
   color: white;
+}
+
+/* Login Page */
+.login-page {
+  background-color: #f8f9fa; /* Fallback color */
+  background-image: url('/images/background.jpg'); /* Ensure path correctness */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 0 20px; /* Prevent content from touching edges */
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error-messages p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: red;
 }
 
 /* Main Content */
@@ -146,9 +209,29 @@ main {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .auth-buttons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
   .cards {
     flex-direction: column;
     align-items: center;
+  }
+
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .about-cards {
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
@@ -206,7 +289,7 @@ main {
   padding: 50px;
 }
 
-.card {
+.about-card {
   text-align: center;
   padding: 20px;
   background: white;
@@ -215,7 +298,7 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.about-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
@@ -226,6 +309,21 @@ main {
   gap: 20px;
   overflow-x: auto;
   padding: 20px;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #ccc #f8f9fa;
+}
+
+.job-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.job-slider::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.job-slider::-webkit-scrollbar-track {
+  background: #f8f9fa;
 }
 
 .job-card {
