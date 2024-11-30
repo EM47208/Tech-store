@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
@@ -12,25 +12,60 @@
             <h1><a href="index.html">TTI</a></h1>
             <span><a href="index.html">TechTide Innovations</a></span>
         </div>
-    <nav>
-        <ul>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="product.html">Products</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="careers.html">Careers</a></li>
-           
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html">Careers</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html">
+                <button class="login-btn" id="loginButton">LOG IN</button>
+            </a>
+            <a href="register.html">
+                <button class="login-btn" id="signupButton">SIGN UP</button>
+            </a>
+        </div>
+    </header>
 
-    <div class="auth-buttons">
-        <a href="login.html">
-       <button class="login-btn" id="loingButton">LOG IN</button>   </a>
-       <a href="register.html">
-       <button class="login-btn" id="loingButton">SIGN UP</button>   </a>
-   
-    </div>
-
-   
-    
+    <main>
+        <section class="contact-us">
+            <div class="contact-info">
+                <h1>Contact Us</h1>
+                <p>Email, call, or fill out the form to learn more about how TechTide can assist you:</p>
+                <p><strong>Email:</strong> info@techtide.com</p>
+                <p><strong>Phone:</strong> +123-456-7890</p>
+                <p><a href="#">Customer Support</a></p>
+                <div class="info-sections">
+                    <div>
+                        <h3>Customer Support</h3>
+                        <p>Our team is available 24/7 to address your concerns.</p>
+                    </div>
+                    <div>
+                        <h3>Feedback</h3>
+                        <p>We value your input to improve our services.</p>
+                    </div>
+                    <div>
+                        <h3>Media Inquiries</h3>
+                        <p>Email us at media@techtide.com for press-related queries.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form>
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Phone Number">
+                    <textarea placeholder="How can we help?" maxlength="120" required></textarea>
+                    <button type="submit" class="form-btn">Submit</button>
+                    <p>By contacting us, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
