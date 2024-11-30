@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset */
 body, h1, ul, li, a {
   margin: 0;
   padding: 0;
@@ -8,48 +8,49 @@ body, h1, ul, li, a {
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-/* Navbar styling */
+/* Navbar Styling */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 50px;
-  background: #f8f9fa; /* Light grey background */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-}
-
-nav ul {
-  list-style: none;
-  display: flex; /* Align items horizontally */
-  gap: 40px; /* Space between menu items */
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo h1 {
   font-size: 24px;
-  color: #111921; /* Dark grey color */
+  color: #111921;
   margin-bottom: 5px;
 }
 
 .logo span {
   font-size: 14px;
-  color: #7f8c8d; /* Lighter grey for subtitle */
+  color: #7f8c8d;
 }
 
-.nav-links {
+nav ul {
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 
-.nav-links a {
-  color: #2c3e50; /* Dark grey color */
+nav ul li a {
+  color: #2c3e50;
   font-size: 16px;
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #3498db; /* Blue highlight on hover */
+nav ul li a:hover {
+  color: #3498db;
+}
+
+/* Auth Buttons */
+.auth-buttons a {
+  margin-left: 10px;
 }
 
 .login-btn {
@@ -68,93 +69,69 @@ nav ul {
   color: white;
 }
 
-/* Styling for the message container */
-#messageContainer {
-  margin-top: 15px;
-  font-size: 16px;
-  color: #333;
-}
-
-#messageContainer p {
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-#messageContainer button {
-  margin-right: 10px;
-  padding: 8px 15px;
-  font-size: 14px;
-  color: white;
-  background-color: #00b3b3;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#messageContainer button:hover {
-  background-color: #008c8c;
-}
-
-
-.login-page {
-  background-image: url('/images/background.jpg'); /* Make sure this is the correct path to your image */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh; /* Full viewport height */
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  padding: 0 20px; /* Prevent content from touching edges */
-}
-
-/* Style for the login container */
-.login-container {
-  background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  max-width: 400px; /* Maximum width for the login box */
+/* Main Content */
+main {
   text-align: center;
+  margin: 50px auto;
 }
 
-.login-container h2 {
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0;
+  font-size: 20px;
+  color: #111921;
+}
+
+.card p {
+  font-size: 14px;
+  color: #7f8c8d;
   margin-bottom: 20px;
 }
 
-.login-container label {
-  display: block;
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-.login-container input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.login-container button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007BFF; /* Button color */
+.card-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
   color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.login-container button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
-
-.error-messages p {
   font-size: 14px;
-  margin: 5px 0;
-  color: red;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
