@@ -1,57 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
-  <link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/assets/register.css">
 </head>
 <body>
-  <header>Register
-  </header>
+    <header class="navbar">
+        <div class="logo">
+            <h1><a href="index.html">TTI</a></h1>
+            <span><a href="index.html">TechTide Innovations</a></span>
+        </div>
+        <a href="index.html">
+        <button class="login-btn" id="loginButton">Home →</button>
+        </a>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="product.html">Products</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="register.html" class="active">Register</a></li>
-    </ul>
-  </nav>
+    </header>
 
-  <div class="container">
-    <h2>Create Your Account</h2>
-    <form onsubmit="return validateRegisterForm()">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" placeholder="Create a password" required>
-      
-      <label for="confirmPassword">Confirm Password:</label>
-      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
-      
-      <button type="submit">Register</button>
-      <p>Already have an account? <a href="login.html">Login here</a>.</p>
-    </form>
-  </div>
-
-  <script src="assets/js/validation.js"></script>
-
-  <footer>
-    <h6>Contact us</h6>
-
-    <div class="img-container">
-
-      <img src="/images/facebook.png" alt="img">
-      <img src="/images/instagram.png" alt="img">
-      <img src="/images/linkedin.png" alt="img">
-    </div>
-
-  </footer>
+    <main>
+        <div class="register-page">
+            <div class="register-container">
+                <h1>Create an account</h1>
+                <p>Already have an account? <a href="login.html">Log in</a></p>
+                <form action="dashboard.html" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="first-name" name="first_name" placeholder="First name" required>
+                        <input type="text" id="last-name" name="last_name" placeholder="Last name" required>
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                    </div>
+                    <button type="submit">Create account</button>
+                </form>
+                <div class="social-login">
+                    <p>Or register with</p>
+                    <button class="social-btn google">Google</button>
+                    <button class="social-btn apple">Apple</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/assets/validation.js"></script>
 </body>
 </html>
