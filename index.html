@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css">    
 </head>
 <body>
-    <header>Welcome to the "Tech Store"</header>
-
+    <header class="navbar">
+        <div class="logo">
+            <h1><a href="index.html">TTI</a></h1>
+            <span><a href="index.html">TechTide Innovations</a></span>
+        </div>
     <nav>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
             <li><a href="product.html">Products</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="careers.html">Careers</a></li>
+           
         </ul>
     </nav>
 
-    <div class="container">
-        <h2>Our Products </h2>
-        <p>DIscoer.. the latest producst...</p>
+    <div class="auth-buttons">
+        <a href="login.html">
+       <button class="login-btn" id="loingButton">LOG IN</button>   </a>
+       <a href="register.html">
+       <button class="login-btn" id="loingButton">SIGN UP</button>   </a>
     </div>
 
-    <footer>
-        <h6>Contact us</h6>
-      </footer>
+    </header>
+    <script src="/assets/validation.js"></script>
 
+   
+    
 </body>
 </html>
