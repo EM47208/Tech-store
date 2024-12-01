@@ -152,7 +152,6 @@ nav ul li a:hover {
 main {
   text-align: center;
   margin: 50px auto;
-  
 }
 
 .cards {
@@ -208,88 +207,82 @@ main {
   background-color: #2980b9;
 }
 
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
-  }
-
-  .auth-buttons {
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-us {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .about-cards {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
-
 /* Contact Us Styling */
 .contact-us {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 50px;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center horizontally */
+  padding: 60px 20px; /* Generous padding with spacing from edges */
+  gap: 40px; /* More space between form and info */
 }
 
+/* Contact Information Section */
 .contact-info {
-  flex: 1;
-  max-width: 50%;
+  max-width: 700px;
+  text-align: center; /* Center-align text */
+  line-height: 1.8; /* Better spacing between lines */
+  font-size: 1.1rem; /* Slightly larger text for readability */
+  color: #333;
 }
 
+/* Contact Form Section */
 .contact-form {
-  flex: 1;
   background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  width: 100%;
+  max-width: 500px; /* Limit form width */
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #007BFF; /* Highlight form title */
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 12px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 1rem; /* Slightly larger input text */
+  color: #333;
+}
+
+.contact-form textarea {
+  resize: none; /* Disable resizing */
+  height: 100px; /* Set height for text area */
 }
 
 .contact-form .form-btn {
   background-color: #007BFF;
   color: #fff;
   border: none;
-  padding: 10px;
+  padding: 12px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 1rem;
   text-transform: uppercase;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
 
 .contact-form .form-btn:hover {
   background-color: #0056b3;
 }
 
-.about-cards{
+/* About Cards Section */
+.about-cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 70px;
 }
 
-.about-card{
+.about-card {
   text-align: center;
   padding: 20px;
   background: rgb(53, 29, 29);
@@ -303,15 +296,15 @@ main {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.about-cards h3{
+.about-cards h3 {
   font-size: 25px;
 }
 
-.about-cards p{
+.about-cards p {
   font-size: 20px;
 }
 
-
+/* Job Slider */
 .job-slider {
   display: flex;
   gap: 20px;
@@ -342,19 +335,7 @@ main {
   min-width: 300px;
 }
 
-
-/*Left container*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  color: #111;
-}
-
+/* Left Container */
 .main-container {
   display: flex;
   justify-content: space-between;
@@ -363,7 +344,6 @@ body {
   padding: 0 5%;
 }
 
-/* Left Side Content */
 .left-content {
   flex: 1;
 }
@@ -401,16 +381,15 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: all 0.5s ease-in-out; 
+  transition: all 0.5s ease-in-out;
   z-index: 0;
 }
 
 .slide.active {
-  left: 0; 
+  left: 0;
   opacity: 1;
   z-index: 1;
 }
-
 
 .slide img {
   width: 100%;
@@ -434,4 +413,47 @@ body {
 .caption p {
   font-size: 1rem;
 }
- 
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .auth-buttons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-us {
+    padding: 40px 10px;
+    gap: 30px;
+  }
+
+  .contact-info {
+    font-size: 1rem; /* Adjust text size for smaller screens */
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .about-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .slider {
+    max-width: 100%;
+    height: 300px;
+  }
+
+  .left-content h1 {
+    font-size: 2.5rem; /* Adjust header size for small screens */
+  }
+}
