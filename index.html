@@ -1,89 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <h1><a href="index.html">TTI</a></h1>
-            <span><a href="index.html">TechTide Innovations</a></span>
+  <header class="navbar">
+    <div class="logo">
+      <h1><a href="index.html">TTI</a></h1>
+      <span><a href="index.html">TechTide Innovations</a></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="product.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html">Careers</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <a href="login.html"><button class="login-btn" id="loginButton">LOG IN</button></a>
+      <a href="register.html"><button class="login-btn" id="signupButton">SIGN UP</button></a>
+    </div>
+  </header>
+  <main>
+    <div class="index-page">
+      <div class="main-page">
+        <h1>Are you ready to grow?</h1>
+        <div class="main-container">
+          <div class="left-content">
+            <h1>Watch.<br>Learn.<br>Grow.</h1>
+          </div>
+          <div class="right-slider">
+            <div class="slider">
+              <div class="slide active">
+                <img src="./Images/ai.jpg" alt="Slide 1">
+                <div class="caption">
+                  <h2>Writing Course</h2>
+                  <p>100 Topics</p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="/Images/data.jpg" alt="Slide 2">
+                <div class="caption">
+                  <h2>Writing</h2>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="./Images/web.jpg" alt="Slide 3">
+                <div class="caption">
+                  <h2>Business</h2>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="careers.html">Careers</a></li>
-            </ul>
-        </nav>
-        <div class="auth-buttons">
-            <a href="login.html">
-                <button class="login-btn" id="loginButton">LOG IN</button>
-            </a>
-            <a href="register.html">
-                <button class="login-btn" id="signupButton">SIGN UP</button>
-            </a>
-        </div>
-    </header>
-    <main>  
-        <div class="main-page">
-        <h1>Are you ready to grow?</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="/images/web.jpg" alt="Course 1">
-                <h3>Master Web Development</h3>
-                <p>Learn the fundamentals of modern web development with hands-on projects.</p>
-                <a href="#" class="card-btn">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="/images/data.jpg" alt="Course 2">
-                <h3>Data Analysis Essentials</h3>
-                <p>Dive into the world of data and learn how to make data-driven decisions.</p>
-                <a href="#" class="card-btn">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="/images/ai.jpg" alt="Course 3">
-                <h3>AI for Beginners</h3>
-                <p>Discover the basics of Artificial Intelligence and its real-world applications.</p>
-                <a href="#" class="card-btn">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="/images/ai.jpg" alt="Course 3">
-                <h3>Technical Support Engineer</h3>
-                <p>Discover the basics of Artificial Intelligence and its real-world applications.</p>
-                <a href="#" class="card-btn">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="/images/ai.jpg" alt="Course 3">
-                <h3>SEO Expert</h3>
-                <p>Discover the basics of Artificial Intelligence and its real-world applications.</p>
-                <a href="#" class="card-btn">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="/images/ai.jpg" alt="Course 3">
-                <h3>Big Data Agent</h3>
-                <p>Discover the basics of Artificial Intelligence and its real-world applications.</p>
-                <a href="#" class="card-btn">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="/images/ai.jpg" alt="Course 3">
-                <h3>Teacher for German language</h3>
-                <p>Discover the basics of Artificial Intelligence and its real-world applications.</p>
-                <a href="#" class="card-btn">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="/images/ai.jpg" alt="Course 3">
-                <h3>Expert on Marketing</h3>
-                <p>Discover the basics of Artificial Intelligence and its real-world applications.</p>
-                <a href="#" class="card-btn">Learn More</a>
-            </div>
-
-        </div>
-    </main>
-    <script src="/assets/validation.js"></script>
+      </div>
+    </div>
+  </main>
+  <script src="/assets/validation.js"></script>
 </body>
 </html>

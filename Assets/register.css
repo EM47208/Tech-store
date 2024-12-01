@@ -1,5 +1,5 @@
 /* General styles */
-/* Reset some default styles */
+
 body, h1, ul, li, a {
     margin: 0;
     padding: 0;
@@ -58,7 +58,7 @@ body, h1, ul, li, a {
     border: 2px solid #2c3e50;
     background: none;
     color: #2c3e50;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -166,7 +166,7 @@ body, h1, ul, li, a {
   }
   
   .register-container {
-      background: #2b2b3f;
+      background: #ffffff;
       border-radius: 12px;
       padding: 30px;
       width: 100%;
@@ -179,7 +179,7 @@ body, h1, ul, li, a {
       margin-bottom: 10px;
       font-size: 24px;
       font-weight: bold;
-      color: #ffffff;
+      color: #000000;
   }
   
   .register-container p {
@@ -195,7 +195,7 @@ body, h1, ul, li, a {
       margin-bottom: 15px;
       border: 1px solid #444;
       border-radius: 6px;
-      background-color: #1e1e2f;
+      background-color: #ffffff;
       color: #fff;
       font-size: 14px;
   }
